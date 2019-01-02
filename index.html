@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allegheny River Trip</title>
+    <!--<link rel="stylesheet" href="index.css"> --COMMENT-->
+    <!--ADD CSS CODE-->
+    <style type="text/css" media="screen">
+        /* BASIC TYPOGRAPHY                       */
+        /* from https://github.com/oxalorg/sakura */
+        /*https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525*/
+        html {
+            font-size: 62.5%;
+            font-family: serif;
+        }
+        body {
+            font-size: 1.8rem;
+            line-height: 1.618;
+            max-width: 38em;
+            margin: auto;
+            color: #4a4a4a;
+            background-color: #f9f9f9;
+            padding: 13px;
+        }
+        @media (max-width: 684px) {
+            body {font-size: 1.53rem;}
+        }
+        @media (max-width: 382px) {
+            body {font-size: 1.35rem;}
+        }
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.1;
+            font-family: Verdana, Geneva, sans-serif;
+            font-weight: 700;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+            -ms-word-break: break-all;
+            word-break: break-word;
+            -ms-hyphens: auto;
+            -moz-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+        h1 {font-size: 2.35em;}
+        h2 {font-size: 2em;}
+        h3 {font-size: 1.75em;}
+        h4 {font-size: 1.5em;}
+        h5 {
+            font-size: 1.25em;
+            padding-left: 50pt;
+            padding-right: 50pt;
+        }
+        h6 {font-size: 1em;}
+        /* RESET LAYOUT AND ADD COLORS */
+        body {
+        margin: 0;
+        padding: 0;
+        max-width: inherit;
+        background: #fff;
+        color: #4a4a4a;
+        }
+        header, footer {
+        font-size: large;
+        text-align: center;
+        padding: 0.3em 0;
+        background-color: #4a4a4a;
+        color: #f9f9f9;
+        }
+        nav {background: #eee;}
+        main {background: #f9f9f9;}
+        aside {background: #eee;}
+        
+        /* FLEXBOX-BASED LAYOUT */
+        body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        }
+        .container {
+        display: flex;
+        flex: 1;
+        }
+        main {
+        flex: 1;
+        padding: 0 20px;
+        }
+        nav {
+        flex: 0 0 180px;
+        padding: 0 10px;
+        order: -1;
+        }
+        aside {
+        flex: 0 0 130px;
+        padding: 0 10px;
+        }
+        /* GRID-BASED LAYOUT */
+        body {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 200px 1fr 150px;
+        grid-template-rows: min-content 1fr min-content;
+        }
+        header {
+        grid-row: 1;
+        grid-column: 1 / 4;
+        font-size: x-large;
+        }
+        nav {
+        grid-row: 2;
+        grid-column: 1 / 2;
+        padding: 0 10px;
+        }
+        main {
+        grid-row: 2;
+        grid-column: 2 / 3;
+        padding: 0 20px;
+        }
+        aside {
+        grid-row: 2;
+        grid-column: 3 / 4;
+        padding: 0 10px;
+        }
+        footer {
+        grid-row: 3;
+        grid-column: 1 / 4;
+        font-size: x-large;
+        }
+        iframe {
+        grid-row: 4;
+        grid-column: 2 / 4;
+        }
+    </style>
+</head>
+<body>
+    <header>Allegheny River Trip June 2019</header>
+    <main>
+        <h1>Map Overview</h1>
+            <img src="http://static1.squarespace.com/static/583ddbca440243877a144679/5861d60cc534a5283f4e0bca/592c9b30f7e0ab6406d97caa/1508413073370/allegheny-river-boat-launches.jpg?format=1500w">
+            <h5>Kayaking River Trip for 4 days & 3 nights from Warren, PA to Tionesta, PA</h5>
+            <!--<h1>Parking</h1>
+            <h5>This is the main content.</h5>-->
+        <h1>Camping</h1>
+            <img width="600" height="600" src="https://i.pinimg.com/originals/28/59/86/285986c2d2942702b3a2152fb28da501.jpg">
+            <img width="1200" height="600" src="https://static1.squarespace.com/static/583ddbca440243877a144679/t/5b356a636d2a73fcad106571/1530227333318/canoe-camp-1.jpg"<BR>>
+            <img width="300" height="300" src="https://static1.squarespace.com/static/583ddbca440243877a144679/t/58627f5bf7e0ab0e6ae453ea/1505391776303/allegheny-river-trip-three?format=300w">
+    </main>
+    <nav>
+        <!--LEFT SIDE-->
+        <h6>Navigation Links</h6>
+        <a href="https://www.google.com/maps/d/u/0/viewer?mid=10D3I_1AsPJGfsqcKwiSh25AHSlg&ll=41.68803199138478%2C-79.46414915512531&z=10" target="_blank">Boat Launch Map<BR></a> 
+        <a href="https://www.alleghenyoutfitters.com/blog/2017/5/29/allegheny-river-boat-launch-access-points" target="_blank">Boat Launch Overview</a> 
+    </nav>
+    <aside>
+        <!--RIGHT SIDE
+        <h6>This is an RIGHT aside section.</h6>
+            <h6>Testing</h6>-->
+    </aside>
+    <footer>
+        <!-- Display the countdown timer in an element -->
+        <p id="demo"></p>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 21, 2019 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s " + "REMAINING UNTIL TRIP";
+
+        // If the count down is finished, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
+        </script>
+    </footer>
+ </body>
+    <!--<iframe width="300" height="150" src="https://www.youtube.com/embed/cd9NvP3hvCw?start=183" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+</html>
