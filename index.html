@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <title>Allegheny River Trip</title>
     <!--<link rel="stylesheet" href="index.css"> COMMENT-->
-    <!--ADD CSS CODE-->
+    <!--CSS CODE-->
     <style type="text/css" media="screen">
-        /* BASIC TYPOGRAPHY                       */
-        /* from https://github.com/oxalorg/sakura */
-        /*https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525https://medium.com/actualize-network/modern-css-explained-for-dinosaurs-5226febe3525*/
+        /* BASIC TYPOGRAPHY */
         html {
             font-size: 62.5%;
             font-family: serif;
@@ -20,8 +18,6 @@
             max-width: 38em;
             margin: auto;
             color: #ffffff;
-            /*background-color: #f9f9f9;*/
-            padding: 13px;
         }
         @media (max-width: 684px) {
             body {font-size: 1.53rem;}
@@ -30,7 +26,7 @@
             body {font-size: 1.35rem;}
         }
         h1, h2, h3, h4, h5, h6 {
-            line-height: 1.1;
+            line-height: 0.5;
             font-family: Verdana, Geneva, sans-serif;
             font-weight: 700;
             overflow-wrap: break-word;
@@ -46,31 +42,26 @@
         h2 {font-size: 2em;}
         h3 {font-size: 1.75em;}
         h4 {font-size: 1.5em;}
-        h5 {
-            font-size: 1.25em;
-            /*padding-left: 50pt;
-            padding-right: 50pt;*/
-        }
+        h5 {font-size: 1.25em;}
         h6 {font-size: 1em;}
         /* RESET LAYOUT AND ADD COLORS */
         body {
         margin: 0;
         padding: 0;
         max-width: inherit;
-        /*background: #fff;
-        color: #4a4a4a;*/
         }
         header, footer {
-        font-size: large;
+        font-size: x-large;
         text-align: center;
         padding: 0.3em 0;
         background-color: #4a4a4a;
         color: #f9f9f9;
         }
-        nav {background: #eee;}
-        main {background: #f9f9f9;}
-        aside {background: #eee;}
-        
+        main{
+        background-image:url('pics/background.gif');
+        background-position: center;
+        background-size: cover;
+        }
         /* FLEXBOX-BASED LAYOUT */
         body {
         min-height: 100vh;
@@ -85,15 +76,6 @@
         flex: 1;
         padding: 0 20px;
         }
-        nav {
-        flex: 0 0 180px;
-        padding: 0 10px;
-        order: -1;
-        }
-        aside {
-        flex: 0 0 130px;
-        padding: 0 10px;
-        }
         /* GRID-BASED LAYOUT */
         body {
         display: grid;
@@ -104,42 +86,23 @@
         header {
         grid-row: 1;
         grid-column: 1 / 4;
-        font-size: x-large;
-        }
-        nav {
-
-        padding: 0 10px;
         }
         main {
         grid-row: 2;
         grid-column: 1 / 4;
-
-        }
-        aside {
-
-        padding: 0 10px;
         }
         footer {
         grid-row: 3;
         grid-column: 1 / 4;
-        font-size: x-large;
         }
-        main{
-        background-image:url('pics/background.gif');
-        background-position: center;
-        background-size: cover;
-        }
-
     </style>
 </head>
 <body>
     <header>Allegheny River Trip June 2019</header>
     <main>
         <h1>Map Overview</h1>
-            <img src="http://static1.squarespace.com/static/583ddbca440243877a144679/5861d60cc534a5283f4e0bca/592c9b30f7e0ab6406d97caa/1508413073370/allegheny-river-boat-launches.jpg?format=1500w">
+            <img src="http://static1.squarespace.com/static/583ddbca440243877a144679/5861d60cc534a5283f4e0bca/592c9b30f7e0ab6406d97caa/1508413073370/allegheny-river-boat-launches.jpg?format=1500w" alt="Map">
             <h5>Kayaking River Trip for 4 days & 3 nights from Warren, PA to Tionesta, PA</h5>
-            <h6>Navigation Links</h6>
-            <a href="https://www.google.com/maps/d/u/0/viewer?mid=10D3I_1AsPJGfsqcKwiSh25AHSlg&ll=41.68803199138478%2C-79.46414915512531&z=10" style="color:#FF0000;" target="_blank">Boat Launch Map<BR></a> 
             <a href="https://www.alleghenyoutfitters.com/blog/2017/5/29/allegheny-river-boat-launch-access-points" style="color:#FF0000;" target="_blank">Boat Launch Overview</a>
             <!--<h1>Parking</h1>
             <h5>This is the main content.</h5>-->
@@ -148,15 +111,8 @@
             <img width="1200" height="600" src="https://static1.squarespace.com/static/583ddbca440243877a144679/t/5b356a636d2a73fcad106571/1530227333318/canoe-camp-1.jpg">
             -->
         </main>
-    <nav>
-        <!--LEFT SIDE-->
-    </nav>
-    <aside>
-        <!--RIGHT SIDE
-        <h6>This is an RIGHT aside section.</h6>
-            <h6>Testing</h6>-->
-    </aside>
     <footer>
+        <!-- JAVASCRIPT CODE -->
         <!-- Display the countdown timer in an element -->
         <p id="demo"></p>
 
@@ -192,5 +148,4 @@
         </script>
     </footer>
  </body>
-    <!--<iframe width="300" height="150" src="https://www.youtube.com/embed/cd9NvP3hvCw?start=183" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
 </html>
