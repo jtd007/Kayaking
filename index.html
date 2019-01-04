@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <img class="animated-gif" scr="pics/campSky.gif">
-    <meta charset="UTF-8">
-    <title>Allegheny River Trip</title>
-    <!--<link rel="stylesheet" href="index.css"> COMMENT-->
+<img class="animated-gif" scr="pics/campSky.gif">
+<meta charset="UTF-8">
+<title>Allegheny River Trip</title>
+<!--<link rel="stylesheet" href="index.css"> COMMENT-->
     <!--CSS CODE-->
     <style type="text/css" media="screen">
         /* BASIC TYPOGRAPHY */
@@ -101,63 +101,59 @@
     </style>
 </head>
 <body>
-    <header>Allegheny River Trip June 2019</header>
-    <main>
-        <h1>Map Overview</h1>
-            <img src="http://static1.squarespace.com/static/583ddbca440243877a144679/5861d60cc534a5283f4e0bca/592c9b30f7e0ab6406d97caa/1508413073370/allegheny-river-boat-launches.jpg?format=1500w" alt="Map"><BR>
-            <a href="https://www.alleghenyoutfitters.com/blog/2017/5/29/allegheny-river-boat-launch-access-points" style="color:#FF0000;" target="_blank">Boat Launch Overview</a>
-            <h5>Kayaking River Trip</h5>
-            <li>4 days & 3 nights from Warren, PA to Tionesta, PA</li>
-            <!--<h1>Parking</h1>
-            <h5>This is the main content.</h5>-->
-        <h1>Launch Points</h1>
-            <h5>Betts (Free)</h5>
-            <img src="pics/start.png" alt="Start" width=80% height=auto><BR>
-            <img src="pics/startInfo.png" alt="StartInfo"><BR>
-            <h5>Starbrick (Outbackadventurespa Shuddle From Tionesta)</h5>
-            <img src="pics/start2.png" alt="Start2" width=80% height=auto><BR>
-            <img src="pics/startInfo2.png" alt="StartInfo2"><BR>
-            <h6>Tionesta (End, Free)</h6>
-            <img src="pics/end.png" alt="End" width=80% height=auto><BR>
-            <img src="pics/endInfo.png" alt="EndInfo">
-            <!--<img width="1200" height="600" src="https://static1.squarespace.com/static/583ddbca440243877a144679/t/5b356a636d2a73fcad106571/1530227333318/canoe-camp-1.jpg">
-            -->
-        </main>
-    <footer>
-        <!-- JAVASCRIPT CODE -->
-        <!-- Display the countdown timer in an element -->
-        <p id="demo"></p>
+<header>Allegheny River Trip June 2019</header>
+<main>
+    <h1>Map Overview</h1>
+        <img src="http://static1.squarespace.com/static/583ddbca440243877a144679/5861d60cc534a5283f4e0bca/592c9b30f7e0ab6406d97caa/1508413073370/allegheny-river-boat-launches.jpg?format=1500w" alt="Map"><BR>
+        <a href="https://www.alleghenyoutfitters.com/blog/2017/5/29/allegheny-river-boat-launch-access-points" style="color:#FF0000;" target="_blank">Boat Launch Overview</a>
+        <h5>Kayaking River Trip</h5>
+        <li>4 days & 3 nights from Warren, PA to Tionesta, PA</li>
+    <h1>Launch Points</h1>
+        <h5>Betts (Free)</h5>
+        <img src="pics/start.png" alt="Start" width=80% height=auto><BR>
+        <img src="pics/startInfo.png" alt="StartInfo"><BR>
+        <h5>Starbrick (Outbackadventurespa Shuddle From Tionesta)</h5>
+        <img src="pics/start2.png" alt="Start2" width=80% height=auto><BR>
+        <img src="pics/startInfo2.png" alt="StartInfo2"><BR>
+        <h6>Tionesta (End, Free)</h6>
+        <img src="pics/end.png" alt="End" width=80% height=auto><BR>
+        <img src="pics/endInfo.png" alt="EndInfo">
+</main>
+<footer>
+    <!-- JAVASCRIPT CODE -->
+    <!-- Display the countdown timer in an element -->
+    <p id="demo"></p>
 
-        <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jun 21, 2019 00:00:00").getTime();
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jun 21, 2019 00:00:00").getTime();
 
-        // Update the count down every 1 second
-        var x = setInterval(function() {
+    // Update the count down every 1 second
+    var x = setInterval(function() {
 
-        // Get todays date and time
-        var now = new Date().getTime();
+    // Get todays date and time
+    var now = new Date().getTime();
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        // Display the result in the element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s " + "REMAINING UNTIL TRIP";
+    // Display the result in the element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s " + "REMAINING UNTIL TRIP";
 
-        // If the count down is finished, write some text 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-        }, 1000);
-        </script>
-    </footer>
- </body>
+    // If the count down is finished, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+    </script>
+</footer>
+</body>
 </html>
